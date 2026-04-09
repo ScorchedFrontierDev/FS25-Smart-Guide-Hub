@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* FS25 color palette */
+  --field:    #4a7c3f;
+  --harvest:  #c8892a;
+  --soil:     #6b4226;
+  --sky:      #3b7bbf;
+  --night:    #0f1a0e;
+
+  /* Surfaces */
+  --surface-0: #0f1a0e;
+  --surface-1: #152314;
+  --surface-2: #1c2e1a;
+  --surface-3: #243722;
+
+  /* Text */
+  --text-primary:   #e8f0e6;
+  --text-secondary: #9dba97;
+  --text-muted:     #5a7856;
+
+  /* Borders */
+  --border:       rgba(74, 124, 63, 0.25);
+  --border-hover: rgba(74, 124, 63, 0.5);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--surface-0);
+  color: var(--text-primary);
+  font-family: var(--font-body, system-ui, sans-serif);
+  line-height: 1.6;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--surface-1); }
+::-webkit-scrollbar-thumb { background: var(--field); border-radius: 3px; }
